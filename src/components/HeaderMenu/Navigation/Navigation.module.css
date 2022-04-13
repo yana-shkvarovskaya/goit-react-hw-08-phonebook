@@ -1,0 +1,15 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: hsl(236deg 72% 36% / 72%)
+}
+
+.activeLink {
+    display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 700;
+  color: hsl(357deg 87% 53%)
+}

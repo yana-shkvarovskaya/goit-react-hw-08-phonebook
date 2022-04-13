@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.header {
+  max-width: 1028px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
