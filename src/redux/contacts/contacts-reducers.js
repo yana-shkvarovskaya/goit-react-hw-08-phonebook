@@ -6,14 +6,14 @@ import contactsOperations from './contacts-operations';
 const { getALLContacts, addContact, deleteContact } = contactsOperations;
 
 const contacts = createReducer([], {
-  [getALLContacts.fulfilled]: (_state, action) => action.payload,
+  [getALLContacts.fulfilled]: (_, action) => action.payload,
   [addContact.fulfilled]: (state, action) => [...state, action.payload],
   [deleteContact.fulfilled]: (state, { payload }) =>
     state.filter(({ id }) => id !== payload),
 });
 
 const filter = createReducer('', {
-  [actions.changeFilter]: (_state, action) => action.payload,
+  [actions.changeFilter]: (_, action) => action.payload,
 });
 
 export default combineReducers({

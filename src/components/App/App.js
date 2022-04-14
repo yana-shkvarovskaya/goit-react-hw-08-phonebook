@@ -2,10 +2,10 @@ import { useEffect, Suspense, lazy } from 'react';
 import { useDispatch } from 'react-redux';
 import { Switch } from 'react-router-dom';
 import Appbar from '../HeaderMenu/AppBar/AppBar';
-import authOperations from '../../redux/auth/auth-operations';
+import { authOperations } from 'redux/auth';
 import s from './App.module.css';
-import PrivateRoute from 'components/HeaderMenu/PrivateRoute';
-import PublicRouter from 'components/HeaderMenu/PublicRouter';
+import PrivateRoute from 'routes/PrivateRoute';
+import PublicRouter from 'routes/PublicRouter';
 
 const HomeView = lazy(() => import('views/HomeView'));
 const RegisterView = lazy(() => import('views/RegisterView'));
